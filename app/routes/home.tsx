@@ -3,8 +3,8 @@ import Navbar from '../../components/Navbar'
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'New React Router App' },
-    { name: 'description', content: 'Welcome to React Router!' },
+    { title: 'Roomify | Architectural Visualization Platform' },
+    { name: 'description', content: 'Roomify | Architectural Visualization Platform!' },
   ]
 }
 
