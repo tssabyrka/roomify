@@ -264,6 +264,54 @@
   }
 
   .visualizer {
+    @apply min-h-screen bg-background flex flex-col;
+
+    .visualizer-content {
+      @apply flex-1 pt-24 pb-12 px-6;
+
+      .container {
+        @apply max-w-7xl mx-auto;
+      }
+
+      .page-header {
+        @apply mb-8;
+
+        .back-link {
+          @apply text-sm text-zinc-500 hover:text-black mb-4 inline-block;
+        }
+
+        h1 {
+          @apply text-4xl font-serif text-black;
+        }
+      }
+
+      .view-grid {
+        @apply grid grid-cols-1 gap-8;
+
+        .preview-card {
+          @apply bg-white rounded-2xl border border-zinc-200 p-6 shadow-sm;
+
+          h3 {
+            @apply text-lg font-serif font-bold text-black mb-4;
+          }
+
+          .image-container {
+            @apply aspect-video bg-zinc-50 rounded-xl border border-dashed border-zinc-200 flex items-center justify-center overflow-hidden;
+
+            img {
+              @apply max-w-full max-h-full object-contain;
+            }
+
+            .error {
+              @apply text-sm text-red-500;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .visualizer-old {
     @apply min-h-screen bg-background pt-6 pb-10 px-4 md:px-6 flex flex-col items-center font-sans relative;
 
     .topbar {
